@@ -1,0 +1,15 @@
+package jp.co.shu;
+
+
+@Controller
+@RequestMapping("login")
+@SessionAttributes("loginModel")
+public class LoginController {
+
+	@ModelAttribute("loginModel")
+	public LoginModel setUpLoginForm() {
+		return new LoginModel();
+	}
+
+
+}

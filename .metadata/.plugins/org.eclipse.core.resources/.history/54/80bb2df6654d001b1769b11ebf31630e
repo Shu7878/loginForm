@@ -1,0 +1,5 @@
+package jp.co.shu;
+
+public class LoginController {
+
+}
