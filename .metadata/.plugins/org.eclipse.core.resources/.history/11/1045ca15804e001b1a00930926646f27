@@ -1,0 +1,8 @@
+package jp.co.shu.controller;
+
+@Controller
+@RequestMapping("regist")
+@SessionAttributes({"loginModel", memberModel})
+public class RegistController {
+
+}
