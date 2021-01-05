@@ -9,7 +9,7 @@ public class MemberModel implements Serializable {
 
 	@NotEmpty(message = "会員氏名を省略することができません。")
 	private String name;
-	private String gender = "woman";
+	private String gender = "man";
 
 	@NotEmpty(message = "メールアドレスを省略することはできません。")
 	@Email(message = "メールアドレスとして判断できません")

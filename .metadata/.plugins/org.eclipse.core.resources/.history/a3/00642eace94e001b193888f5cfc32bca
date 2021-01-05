@@ -1,0 +1,16 @@
+package jp.co.shu.controller;
+
+import org.springframework.web.bind.support.SessionStatus;
+
+@Controller
+@RequestMapping("finish")
+@SessionAttributes({"loginModel", "memberModel"})
+public class FinishController {
+
+	@RequestMapping(method=RequestMethod.POST)
+	public String toFinish(Model model, SessionStatus status) {
+		status.setComplete();
+		model.addAttributes("message", "セッションが削除されました");
+		return "finish";
+	}
+}
